@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clalit_login_nav_graph"
+    app:startDestination="@id/clalitLoginFragment">
+
+    <fragment
+        android:id="@+id/clalitHomeFragment"
+        android:name="com.rotemyanco.torim.ui.clalit.home.ClalitHomeFragment"
+        android:label="fragment_clalit_home"
+        tools:layout="@layout/fragment_clalit_home" >
+        <argument
+            android:name="str_username"
+            app:argType="string" />
+        <argument
+            android:name="str_usercode"
+            app:argType="string" />
+        <argument
+            android:name="str_user_password"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/clalitLoginFragment"
+        android:name="com.rotemyanco.torim.ui.clalit.login.ClalitLoginFragment"
+        android:label="fragment_clalit_login"
+        tools:layout="@layout/fragment_clalit_login" >
+        <action
+            android:id="@+id/action_clalitLoginFragment_to_clalitHomeFragment"
+            app:destination="@id/clalitHomeFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/clalitHomeFragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="str_username"
+            app:argType="string" />
+        <argument
+            android:name="str_usercode"
+            app:argType="string" />
+        <argument
+            android:name="str_user_password"
+            app:argType="string" />
+    </fragment>
+</navigation>

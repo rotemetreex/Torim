@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clalitLoginFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".ui.clalit.login.ClalitLoginFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <TextView
+        android:id="@+id/tv_header_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:alpha="0.7"
+        android:background="@drawable/round_style"
+        android:backgroundTint="#076865"
+        android:fontFamily="@font/archivo"
+        android:gravity="center|clip_vertical"
+        android:letterSpacing="0.1"
+        android:padding="25dp"
+        android:text="@string/clalit_login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints="name"
+        android:background="#ABB6BC"
+        android:ems="10"
+        android:fontFamily="@font/archivo"
+        android:hint="@string/user_name_hint"
+        android:inputType="textPersonName"
+        android:minHeight="58sp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header_login" />
+
+    <EditText
+        android:id="@+id/et_usercode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:hint="@string/user_code_hint"
+        android:inputType="textPersonName"
+        android:minHeight="58sp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:background="#D5C8CF"
+        android:fontFamily="@font/archivo"
+
+        app:layout_constraintEnd_toEndOf="@+id/et_username"
+        app:layout_constraintStart_toStartOf="@+id/et_username"
+        app:layout_constraintTop_toBottomOf="@+id/et_username" />
+
+    <EditText
+        android:id="@+id/et_user_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints="password"
+        android:ems="10"
+        android:hint="@string/user_password_hint"
+        android:inputType="textPassword"
+        android:minHeight="58sp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:background="#CAAFC6"
+        android:fontFamily="@font/archivo"
+
+        app:layout_constraintEnd_toEndOf="@+id/et_username"
+        app:layout_constraintStart_toStartOf="@+id/et_username"
+        app:layout_constraintTop_toBottomOf="@+id/et_usercode" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="66sp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/archivo"
+        android:letterSpacing="0.15"
+        android:minWidth="90dp"
+        android:text="@string/button_login"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:backgroundTint="#076865"
+        android:alpha="0.7"
+        app:cornerRadius="25dp"
+
+        app:layout_constraintEnd_toEndOf="@+id/et_username"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/et_username"
+        app:layout_constraintTop_toBottomOf="@+id/et_user_password" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.84" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

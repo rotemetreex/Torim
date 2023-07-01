@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_dr_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/andika"
+            android:text="@string/dr_name_link_here"
+            android:textAllCaps="false"
+
+
+            android:textSize="15sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/btn_subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/andika"
+            android:text="@string/subscribe_for_notification"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+        <TextView
+            android:id="@+id/tv_dr_profession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_underscore"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_dr_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dr_name" />
+
+        <TextView
+            android:id="@+id/tv_visit_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_underscore"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/tv_dr_profession"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dr_profession" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_corners_style"
+
+            android:backgroundTint="#90B59F"
+            android:checked="false"
+
+            android:letterSpacing="0.02"
+            android:minHeight="48dp"
+            android:paddingStart="18dp"
+
+            android:paddingTop="5dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="5dp"
+
+            android:switchMinWidth="60dp"
+            android:switchPadding="5dp"
+            android:text="@string/subscribe_for_nnotification"
+
+            android:textSize="14sp"
+            android:thumbTint="#256BE4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_visit_date_time" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

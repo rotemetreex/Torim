@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/clalitHomeFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    tools:context=".ui.clalit.home.ClalitHomeFragment">
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.55"
+
+        android:background="@drawable/gradient_2"
+        android:fontFamily="monospace"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+
+        android:text="@string/tv_desc"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_appointments"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/gradient_2"
+
+        android:orientation="vertical"
+
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    android:background="#DCC9D4"-->
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btn_get_data"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="32dp"-->
+    <!--        android:text="@string/get_appointments"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tv_desc" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/btn_clear_data"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginEnd="32dp"-->
+    <!--        android:text="@string/clear_reset_data"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        app:layout_constraintBaseline_toBaselineOf="@+id/btn_get_data"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent" />-->

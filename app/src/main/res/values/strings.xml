@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">torim</string>
+    <string name="switch_ON_state">Service is \nON</string>
+    <string name="switch_OFF_state">Service is \nOFF</string>
+    <string name="clalit_login">Clalit Login</string>
+    <string name="user_name">Username</string>
+    <string name="user_name_hint">username</string>
+    <string name="user_code">Usercode</string>
+    <string name="user_code_hint">user code</string>
+    <string name="password">Password</string>
+    <string name="user_password_hint">password</string>
+    <string name="button_login">login</string>
+    <string name="tv_desc">This App searches for earlier dates for your doctor\'s visit! You\'ll receive a notification</string>
+    <string name="tv_main_header_activity_main">Clalit Login</string>
+    <string name="dr_name_link_here">Dr Name link HERE</string>
+    <string name="subscribe_for_notification">Subscribe for notification</string>
+    <string name="empty_underscore">________________________</string>
+    <string name="subscribe_for_nnotification">Subscribe for \nnotification</string>
+    <string name="get_appointments">get appointments</string>
+    <string name="clear_reset_data">clear/reset data</string>
+</resources>
