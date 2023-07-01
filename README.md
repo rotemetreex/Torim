@@ -1,4 +1,4 @@
-# [Torim]()
+# Torim
 
 "Torim" is an Android App written in kotlin, created to serve the purpose of finding earlier dates for your set doctors appointments, for all clalit members. This application has a strict privacy policy and does not save or use any user data. Enjoy!
 
